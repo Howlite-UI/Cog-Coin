@@ -1,0 +1,13 @@
+{
+  "itemGroup.cogcoin": "Example Mod Tab",
+  "block.cogcoin.example_block": "Example Block",
+  "item.cogcoin.example_item": "Example Item",
+
+  "cogcoin.configuration.title": "Cog & Coin Configs",
+  "cogcoin.configuration.section.cogcoin.common.toml": "Cog & Coin Configs",
+  "cogcoin.configuration.section.cogcoin.common.toml.title": "Cog & Coin Configs",
+  "cogcoin.configuration.items": "Item List",
+  "cogcoin.configuration.logDirtBlock": "Log Dirt Block",
+  "cogcoin.configuration.magicNumberIntroduction": "Magic Number Text",
+  "cogcoin.configuration.magicNumber": "Magic Number"
+}
