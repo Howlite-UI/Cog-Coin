@@ -54,6 +54,9 @@ public class CogCoin {
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
+    // Creates a new simple item with the id "cogcoin:copper_coin"
+    public static final DeferredItem<Item> COPPER_COIN = ITEMS.registerSimpleItem("copper_coin");
+
     // Creates a creative tab with the id "cogcoin:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.cogcoin")) //The language key for the title of your CreativeModeTab
@@ -61,6 +64,7 @@ public class CogCoin {
             .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(COPPER_COIN.get()); // Add the copper coin to the tab
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
